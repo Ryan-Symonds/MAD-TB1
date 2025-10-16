@@ -7,9 +7,9 @@ export const ModuleModifyScreen = () => {
   //handlers
   //view
   return (
-    <screen>
-      <Text> List </Text>
-    </screen>
+    <Screen>
+      <Text> Modify </Text>
+    </Screen>
   );
 };
 

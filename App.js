@@ -14,7 +14,7 @@ export const App = () => {
   return (
     <NavigationContainer>
       <stack.Navigator
-        initialRouteName="ModuleAddScreen"
+        initialRouteName="ModuleListScreen"
         screenOptions={{
           headerStyle: { backgroundColor: "Black" },
           headerTintColor: "white",
