@@ -16,10 +16,9 @@ export const screen = ({ children }) => {
 
 const styles = StyleSheet.create({
   screen: {
+    padding: 15,
     flex: 1,
     backgroundColor: "#ffffffff",
-    alignItems: "center",
-    justifyContent: "center",
   },
 });
 
