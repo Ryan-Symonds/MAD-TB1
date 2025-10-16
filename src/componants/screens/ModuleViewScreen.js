@@ -1,26 +1,18 @@
-import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
+import screen from "../layout/Screen";
 
 export const ModuleViewScreen = () => {
+  //Instalisation
+  //state
+  //handlers
+  //view
   return (
-    //Instalisation
-    //state
-    //handlers
-    //view
-    <View style={styles.container}>
-      <Text> View </Text>
-      <StatusBar style="light" />
-    </View>
+    <screen>
+      <Text> List </Text>
+    </screen>
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#ffffffff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
+const styles = StyleSheet.create({});
 
-export default ModuleViewScreen;
+export default ModuleListScreen;
