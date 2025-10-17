@@ -1,18 +1,23 @@
+import { useState } from "react";
 import { StyleSheet, ScrollView } from "react-native";
 import Screen from "../layout/Screen";
 import initalmodules from "../../Data/modules";
 import ModuleList from "../entity/modules/ModuleList";
+import RederCount from "../UI/RenderCount";
 
 export const ModuleListScreen = () => {
   //Instalisation
-  const modules = initalmodules;
   //state
+  const [modules, setmodles] = useState(initalmodules);
+
   //handlers
-  const handleSelect = (module) => alert(`Item ${module.ModuleCode} Selcted`);
+  const handleDelete = (module) =>
+    setmodles(modules.filter((item) => item.ModuleID !== module.ModuleID));
   //view
   return (
     <Screen>
-      <ModuleList modules={modules} onSelect={handleSelect} />
+      <RederCount />
+      <ModuleList modules={modules} onSelect={handleDelete} />
     </Screen>
   );
 };
